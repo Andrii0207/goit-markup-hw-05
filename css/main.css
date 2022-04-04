@@ -128,6 +128,8 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-font-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-link:hover,
@@ -156,6 +158,8 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-font-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-email:hover,
@@ -166,6 +170,8 @@ address {
 .header-icon {
   margin-right: 10px;
   fill: var(--secondary-font-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact {
@@ -187,6 +193,8 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-font-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-number:hover,
@@ -242,6 +250,8 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--btn-bg-color);
   color: var(--white-font-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
@@ -382,6 +392,8 @@ address {
   border-radius: 50%;
   cursor: pointer;
   background-color: transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item-icon:not(:last-child) {
@@ -392,6 +404,8 @@ address {
 .team-link-icon:focus .team-icon {
   background-color: var(--accent-color);
   fill: var(--white-font-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link-icon:hover,
@@ -480,12 +494,6 @@ address {
   border-radius: 4px;
 }
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
@@ -493,6 +501,14 @@ address {
 
 .clients-icon {
   fill: #afb1b8;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .clients-link .clients-item:not(:last-child) {
@@ -581,6 +597,8 @@ address {
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   fill: var(--white-font-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-icon:hover,
