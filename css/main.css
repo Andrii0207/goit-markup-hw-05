@@ -393,28 +393,28 @@ address {
   cursor: pointer;
   background-color: transparent;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item-icon:not(:last-child) {
   margin-right: 10px;
 }
 
-.team-link-icon:hover .team-icon,
-.team-link-icon:focus .team-icon {
-  background-color: var(--accent-color);
-  fill: var(--white-font-color);
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .team-link-icon:hover,
 .team-link-icon:focus {
   background-color: var(--accent-color);
+  fill: var(--white-font-color);
 }
 
 .team-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-link-icon:hover .team-icon,
+.team-link-icon:focus .team-icon {
+  background-color: var(--accent-color);
+  fill: var(--white-font-color);
 }
 
 .team-main-name {
@@ -503,8 +503,7 @@ address {
 
 .clients-icon {
   fill: #afb1b8;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .clients-icon,
